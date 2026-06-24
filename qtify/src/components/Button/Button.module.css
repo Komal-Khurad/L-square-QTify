@@ -1,0 +1,25 @@
+.button {
+    /* background-color: #121212;
+    top: 13px;
+    left: 1238px;
+    border-radius: 12px;
+    border: 1px solid #34C94B;
+    gap: 10px;
+    padding: 10px 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 27px;
+    padding: 10px 16px;
+    background: #121212;
+    border: 1px solid #34c94b;
+    border-radius: 12px;
+    color: #34c94b;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    min-height: 47px;
+    cursor: pointer;
+}
