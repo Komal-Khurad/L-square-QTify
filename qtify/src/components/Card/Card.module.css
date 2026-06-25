@@ -1,0 +1,54 @@
+.cardWrapper {
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: var(--color-black);
+}
+
+.card {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.cardImage {
+  height: 170px;
+  object-fit: cover;
+}
+
+.cardContent {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8px !important;
+
+  background: var(--color-white);
+}
+
+.chip {
+  background-color: var(--color-black) !important;
+  color: var(--color-white) !important;
+
+  height: 23px !important;
+
+  border-radius: 20px !important;
+}
+
+.chip :global(.MuiChip-label) {
+  padding-left: 8px;
+  padding-right: 8px;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.albumTitle {
+  color: var(--color-white);
+  font-family: "Poppins", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+}
