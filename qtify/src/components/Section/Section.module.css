@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 18px;
 }
 
@@ -25,9 +24,10 @@
   height: 30px;
   color: var(--color-white);
   opacity: 1;
+  margin: 0;
 }
 
-.actionButton {
+.collapseBtn {
   border: none;
   background: transparent;
   font-family: "Poppins", sans-serif;
@@ -45,8 +45,7 @@
   color: var(--color-primary);
 }
 
-.content {
-  width: 100%;
+.cardContainer {
   gap: 24px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(159px, 1fr));
