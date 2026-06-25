@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Section from "../Section/Section";
 import Card from "../Card/Card";
-import styles from "./Album.module.css";
 
 export default function TopAlbums() {
     const [albums, setAlbums] = useState([]);
