@@ -1,6 +1,6 @@
-:global(.swiper-slide) {
+/* :global(.swiper-slide) {
   width: 159px !important;
-}
+} */
 .carouselWrapper {
   position: relative;
   width: 100%;

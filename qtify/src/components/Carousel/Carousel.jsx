@@ -37,6 +37,25 @@ export default function Carousel({
                 modules={[Navigation]}
                 spaceBetween={24}
                 slidesPerView="auto"
+                slidesPerGroup={1}
+                watchOverflow={true}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 2,
+                    },
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                    1440: {
+                        slidesPerView: 7,
+                    },
+                }}
                 navigation={{
                     // prevEl: ".prev-btn",
                     // nextEl: ".next-btn",
@@ -53,23 +72,6 @@ export default function Carousel({
                         isEnd: swiper.isEnd,
                     });
                 }}
-            // breakpoints={{
-            //     320: {
-            //         slidesPerView: 2,
-            //     },
-            //     640: {
-            //         slidesPerView: 3,
-            //     },
-            //     768: {
-            //         slidesPerView: 4,
-            //     },
-            //     1024: {
-            //         slidesPerView: 6,
-            //     },
-            //     1440: {
-            //         slidesPerView: 7,
-            //     },
-            // }}
             >
                 {data.map((item) => (
                     // <SwiperSlide key={item.id} className={styles.swiperSlide}>
