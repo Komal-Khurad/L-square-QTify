@@ -1,0 +1,40 @@
+:global(.swiper-slide) {
+  width: 159px !important;
+}
+.left,
+.right {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 100;
+}
+
+.left {
+  left: -16px;
+}
+
+.right {
+  right: -16px;
+}
+
+.icon {
+  color: white;
+  font-size: 16px;
+}
+/* .swiper-slide {
+  width: 159px !important;
+} */

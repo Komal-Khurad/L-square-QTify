@@ -2,6 +2,7 @@
   width: 159px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: 6px;
   background-color: var(--color-black);
 }
