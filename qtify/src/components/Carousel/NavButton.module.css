@@ -1,6 +1,11 @@
 :global(.swiper-slide) {
   width: 159px !important;
 }
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 18px;
+}
 .left,
 .right {
   position: absolute;
@@ -21,6 +26,7 @@
 
   cursor: pointer;
   z-index: 100;
+  pointer-events: auto;
 }
 
 .left {
