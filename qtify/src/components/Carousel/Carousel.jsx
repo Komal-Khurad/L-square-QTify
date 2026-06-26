@@ -22,12 +22,7 @@ export default function Carousel({
     });
 
     return (
-        // <div style={{ position: "relative" }}>
         <div className={styles.carouselWrapper}>
-            {/* <LeftNavButton /> */}
-            {/* {!navState.isBeginning && (
-                <LeftNavButton ref={prevRef} />
-            )} */}
             <LeftNavButton
                 ref={prevRef}
                 hidden={navState.isBeginning}
@@ -84,13 +79,6 @@ export default function Carousel({
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {/* <RightNavButton /> */}
-            {/* {!navState.isEnd && (
-                <RightNavButton ref={nextRef} />
-            )} */}
         </div>
-
-
-        // </div>
     );
 }

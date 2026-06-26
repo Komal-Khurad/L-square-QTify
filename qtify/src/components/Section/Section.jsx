@@ -9,8 +9,7 @@ export default function Section({
     apiEndpoint,
 }) {
     const [albums, setAlbums] = useState([]);
-    // const [collapsed, setCollapsed] = useState(false);
-    const [showCarousel, setShowCarousel] = useState(false);
+    const [showCarousel, setShowCarousel] = useState(true);
 
     useEffect(() => {
         const fetchAlbums = async () => {
