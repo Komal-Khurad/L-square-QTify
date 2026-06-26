@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin-top: 32px;
   background-color: var(--color-black);
+  text-align: left;
 }
 
 .header {
@@ -52,10 +53,17 @@
 }
 /* Styles for the tabs*/
 .tabs {
-  margin: 24px 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.tabs :global(.MuiTabs-scroller) {
+  margin-left: 0;
 }
 
 .tabs :global(.MuiTabs-flexContainer) {
+  padding-left: 0;
   gap: 24px;
 }
 
@@ -65,6 +73,14 @@
   font-size: 14px;
   min-width: auto;
   padding: 0;
+}
+.tabs :global(.MuiTab-root) {
+  min-width: 0 !important;
+  width: auto;
+  padding: 0 12px;
+  margin: 0;
+  color: var(--color-white);
+  text-transform: none;
 }
 
 .tabs :global(.Mui-selected) {

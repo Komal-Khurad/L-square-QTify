@@ -13,20 +13,15 @@ export default function Section({
     apiEndpoint,
     isSongs = false,
 }) {
-    // const [albums, setAlbums] = useState([]);
-    // const [showCarousel, setShowCarousel] = useState(true);
     const [data, setData] = useState([]);
 
-    const [showCarousel, setShowCarousel] =
-        useState(true);
+    const [showCarousel, setShowCarousel] = useState(true);
 
     const [genres, setGenres] = useState([]);
 
-    const [selectedGenre, setSelectedGenre] =
-        useState("all");
+    const [selectedGenre, setSelectedGenre] = useState("all");
 
-    const [filteredSongs, setFilteredSongs] =
-        useState([]);
+    const [filteredSongs, setFilteredSongs] = useState([]);
 
 
     // Albums/Songs
@@ -42,7 +37,7 @@ export default function Section({
         };
 
         fetchData();
-    }, [apiEndpoint]);
+    }, [apiEndpoint, isSongs]);
 
     // Genres
     useEffect(() => {
@@ -64,6 +59,7 @@ export default function Section({
 
         fetchGenres();
     }, [isSongs]);
+
     // Filter Songs
     useEffect(() => {
         if (!isSongs) return;
@@ -78,20 +74,7 @@ export default function Section({
                 )
             );
         }
-    }, [selectedGenre, data]);
-
-    // const handleTabChange = (_, value) => {
-    //     setTab(value);
-
-    //     if (value === "all") {
-    //         setDisplayData(data);
-    //         return;
-    //     }
-
-    //     setDisplayData(
-    //         data.filter((song) => song.genre.key === value)
-    //     );
-    // };
+    }, [selectedGenre, data, isSongs]);
 
     return (
         <section className={styles.container}>
