@@ -50,3 +50,28 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+/* Styles for the tabs*/
+.tabs {
+  margin: 24px 0;
+}
+
+.tabs :global(.MuiTabs-flexContainer) {
+  gap: 24px;
+}
+
+.tabs :global(.MuiButtonBase-root) {
+  color: var(--color-white);
+  text-transform: none;
+  font-size: 14px;
+  min-width: auto;
+  padding: 0;
+}
+
+.tabs :global(.Mui-selected) {
+  color: var(--color-white) !important;
+}
+
+.tabs :global(.MuiTabs-indicator) {
+  background: var(--color-primary);
+  height: 3px;
+}

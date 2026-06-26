@@ -9,7 +9,10 @@ import {
 } from "@mui/material";
 import styles from "./Card.module.css";
 
-export default function Card({ image, title, follows }) {
+export default function Card({ image,
+    title,
+    follows,
+    chipLabel, }) {
     return (
         <div className={styles.cardWrapper}>
             <MuiCard className={styles.card}>
@@ -21,7 +24,8 @@ export default function Card({ image, title, follows }) {
                 />
                 <CardContent className={styles.cardContent}>
                     <Chip
-                        label={`${follows} Follows`}
+                        // label={`${follows} Follows`}
+                        label={`${follows} ${chipLabel}`}
                         className={styles.chip}
                     />
                 </CardContent>
